@@ -50,9 +50,8 @@ public class DVDLibraryView {
 
     public void displayDVDList(List<DVD> DVDList) {
         for (DVD currentDVD : DVDList) {
-            String DVDInfo = String.format("#%s : %s %s",
+            String DVDInfo = String.format("%s : %s ",
                     currentDVD.getTitle(),
-                    currentDVD.getDirectorsName(),
                     currentDVD.getDate());
             io.print(DVDInfo);
         }
